@@ -1,0 +1,84 @@
+body{
+    --color-primary:#009579;
+    --color-primary-dark:#007f67;
+    --color-secondary:#252c6a;
+    --color-error:#cc3333;
+    --color-success:#4bb544;
+    border-radius: 4px;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;}
+    .cont{
+        width: 400px;
+        max-width: 400px;
+        margin: 1rem;
+        padding: 2rem;
+        box-shadow: 0 0 40px rgba(0,0,0.2);
+        box-sizing: var();
+    }
+    
+    .cont,
+    .form_button{
+        font:500 1rem 'quicksand','sans-serif';
+    }
+    .form > *:first-child{
+        margin-top: 0;
+    }
+    .form > *:last-child{
+        margin-bottom: 0;
+    }
+    .form_title{
+        margin-bottom:2rem ;
+        text-align: center;
+    }
+    
+   
+    .form_input-group{
+        height: 40px;
+    
+        align-content: center;
+        text-align: center;
+        border: 2vh ;
+        margin-top: 8px;
+    }
+    button{
+        margin-top: 15px;
+    }
+    form{
+        text-align: center;
+    }
+    .form__input{
+        width: 250px;
+        height: 30px;
+        border-color: #009579;
+    }
+    a{
+        color: black;
+    }
+    a:link { text-decoration: none; }
+
+
+    a:visited { text-decoration: none; }
+    
+    
+    a:hover { text-decoration: underline; }
+    
+    
+    a:active { text-decoration: none; }
+    button{
+        background-color: #009579 ;
+        width: 250px;
+        height: 30px;
+        color: white;
+    }
+    button a{
+        color: white;
+    }
+    button:hover{
+        background-color: #007f67;
+    
+    }
+   button {border-radius: 10px;}

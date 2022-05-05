@@ -1,0 +1,63 @@
+
+<html>
+    <head>
+        <link rel="stylesheet" href="style2.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        
+       <div class="cont">
+            <form class="form form-hiden" id="signup-form" action="log.html" >
+                <h1 class="form_title">Create Account</h1>
+                
+                  <div class="form_input-group">
+                      <input type="text" id="name1"class="form__input" autofocus placeholder="username"  required>
+                      <div class="form_input-error-message"></div>
+                  </div>
+                  <div class="form_input-group">
+                    <input type="text" id="email1" class="form__input" autofocus placeholder="Email Address" required>
+                    <div class="form_input-error-message"></div>
+                </div>
+                      
+                      <div class="form_input-group">
+                      <input type="password" id="pass1" class="form__input" autofocus placeholder="password" required>
+                      
+                      </div>
+                     
+                      <button type="submit" class="form_button"  id="signup_btn" > continue </button>
+                      
+        
+                      <p class="form_text">
+                          <a  href="log.html">Already have accounts ? sign in </a>
+                      </p>
+                 
+            </form>
+        </div>
+        <script>
+           
+      $("#signup-form").submit(function () {
+        var nm1 = $("#name1").val();
+        var ema1=$("#email1").val();
+        var ps1 = $("#pass1").val();
+        localStorage.setItem("n1", nm1);
+        localStorage.setItem("m1",ema1);
+        localStorage.setItem("p1", ps1);
+
+
+      })
+              
+        </script>
+  
+      
+      
+ 
+    
+              
+            </body>
+
+
+
+
+
+
+          </html>

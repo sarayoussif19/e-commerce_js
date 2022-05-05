@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>log in page </title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <div class="container">
+      <form class="form" id="login-form"  action="home.html">
+          <h1 class="form__title">login</h1>
+          <div class="form__message form__message--error"></div>
+            <div class="form__input-group">
+                <input id="email2" type="email" class="form__input" autofocus placeholder=" email" required>
+                <div class="form__input-error-message"></div>
+            </div>
+                
+                <div class="form__input-group">
+                <input  id="pass2" type="password" class="form__input" autofocus placeholder="password" required>
+                <div class="form__input-error-message"></div>
+                </div>
+                <button id="login_btn" type="submit" class="form__button"  >continue</button>
+                
+                
+                <p class="form__text">
+                    <a   class="form__link" href="log2.html"  id="linkcreateaccount" > create new account</a>
+                </p>
+           
+      
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+     
+
+      $("#login-form").submit(function () {
+        var enteredEmail = $("#email2").val();
+        var enteredPass = $("#pass2").val();
+
+        var storedEmail = localStorage.getItem("m1");
+        var storedPass = localStorage.getItem("p1");
+
+        if (enteredEmail == storedEmail && enteredPass == storedPass) {
+          confirm("You are logged in!");
+        }
+        else {
+          confirm("Username and Password do not match!");
+        }
+
+      });
+
+    });
+  </script>
+  <!--<script src="loginScrit.js"></script>-->
+</body>
+</html>
